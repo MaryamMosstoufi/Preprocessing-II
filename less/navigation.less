@@ -1,1 +1,37 @@
 // Navigation Styles here
+header {
+
+  .main-navigation {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    a {
+      font-family: 'Indie Flower', cursive;
+      color:@shark;
+      text-decoration: none;
+      font-size: 4rem;
+      padding: 20px 0;
+    }
+    nav {
+
+      a {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        padding: 20px;
+      }
+    }
+
+    @media @mobile {
+       flex-direction: column;
+    }
+
+  }
+
+  .hero {
+    border-top: 2px dashed @navigation-border;
+
+  }
+
+}
