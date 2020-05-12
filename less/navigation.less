@@ -1,6 +1,6 @@
 // Navigation Styles here
 header {
-
+  border-bottom: 2px dashed @navigation-border;
   .main-navigation {
     display: flex;
     align-items: center;
@@ -15,22 +15,19 @@ header {
       padding: 20px 0;
     }
     nav {
+      margin-bottom: 1rem;
 
       a {
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
         padding: 20px;
+
       }
     }
 
     @media @mobile {
        flex-direction: column;
     }
-
-  }
-
-  .hero {
-    border-top: 2px dashed @navigation-border;
 
   }
 
