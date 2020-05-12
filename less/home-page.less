@@ -6,6 +6,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @tablet {
+      flex-direction: column;
+      padding: 5%;
+      margin: 0;
+    }
+
     @media @mobile {
       flex-direction: column;
       padding: 5%;
@@ -36,6 +42,9 @@
       @media @mobile {
         .full-width();
       }
+      @media @tablet {
+        .full-width();
+      }
     }
 
     .img-content {
@@ -48,6 +57,9 @@
       @media @mobile {
         .full-width();
       }
+      @media @tablet {
+        .full-width();
+      }
     }
   }
 
@@ -57,11 +69,17 @@
     @media @mobile {
       flex-direction: column-reverse;
     }
+    @media @tablet {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
       @media @mobile {
+        .full-width();
+      }
+      @media @tablet {
         .full-width();
       }
     }
@@ -72,6 +90,9 @@
       @media @mobile {
         .full-width();
       }
+      @media @tablet {
+        .full-width();
+      }
     }
   }
 
@@ -79,6 +100,11 @@
     width: 75%;
     margin: 0 auto 30px;
     @media @mobile {
+      .full-width();
+      padding: 30px;
+      margin: 0;
+    }
+    @media @tablet {
       .full-width();
       padding: 30px;
       margin: 0;
@@ -97,11 +123,18 @@
     @media @mobile {
       flex-direction: column;
     }
+    @media @tablet {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       @media @mobile {
+        .full-width();
+        padding: 0 30px;
+      }
+      @media @tablet {
         .full-width();
         padding: 0 30px;
       }
